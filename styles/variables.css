@@ -19,6 +19,14 @@
   /* Шрифты */
   --font-family: 'IBM Plex Mono', monospace;
   --font-size-base: 18px;
+  --small-line-height: 83%;
+  --regular-line-height: 100%;
+  --large-line-height: 130%;
+  --title-line-height: 82.5%;
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  --font-style: normal;
+  --is-light: visible;
   
   /* Фоновое изображение */
   --background-image: url('../images/cover-image-dark.png');

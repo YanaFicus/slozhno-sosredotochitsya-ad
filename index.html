@@ -18,39 +18,41 @@
   <body class="page">
     
     <!-- Header -->
-    <header class="header decorated-zone">
-        <!-- Верхняя панель: REC и Навигация -->
-        <div class="header__top">
-            <div class="rec-indicator">
-                REC <span class="rec-dot"></span>
-            </div>
-            
-            <nav class="header__nav">
-                <button class="header__theme-menu-button
-                    header__theme-menu-button_type_light" >
-                  день
-                </button>
-                <button class="header__theme-menu-button
-                    header__theme-menu-button_type_auto">
-                  авто
-                </button>
-                <button class="header__theme-menu-button
-                    header__theme-menu-button_type_dark 
-                    header__theme-menu-button_active">
-                  неон
-                </button>
-            </nav>
-        </div>
-
-        <!-- Главный заголовок -->
-        <h1 class="header__title accent-text">no focus</h1>
-
-        <!-- Подзаголовок -->
-        <div class="header__subtitle">
-            Что делать, когда не можешь делать ничего <br>
-            Или почему нам так сложно сконцентрироваться,
-            особенно когда очень надо
-        </div>
+     <header class="header decorated-zone">
+      <div class="rec-indicator" aria-hidden="true">REC</div>
+      <nav class="header__theme-menu">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
+              День
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              disabled
+            >
+              Авто
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+            >
+              Неон
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title accent-text">
+        no focus
+      </h1>
+      <p class="header__subtitle title-decor">
+      Что делать, когда не можешь делать ничего <br />
+      Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
 
     <main>
