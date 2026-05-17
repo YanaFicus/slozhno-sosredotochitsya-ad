@@ -129,6 +129,15 @@
   cursor: pointer;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--nav-hover-border);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--nav-hover-border);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--nav-color);
 }
@@ -203,6 +212,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.content__text-link {
+  color: var(--text-link);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.content__text-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content__text-link:focus {
+  outline: 1px solid var(--text-link);
 }
 
 .title-decor {
