@@ -100,7 +100,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--nav-hover-border);
+  border: 1px solid var(--nav-color);
   pointer-events: none;
 }
 
