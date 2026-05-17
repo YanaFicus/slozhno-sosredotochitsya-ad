@@ -15,11 +15,11 @@
 /* --- Header (шапка) --- */
 .header {
   position: relative;
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   box-sizing: border-box;
-  min-height: 100vh; 
+  min-height: 100vh;
   padding: 20px;
   overflow: hidden;
   background-image: var(--background-image);
@@ -140,7 +140,6 @@
 @media (max-width: 1023px) {
   .header__nav {
     top: 140px;
-    right: 20px;
     right: 0;
     left: auto;
     flex-direction: column;
@@ -247,9 +246,13 @@
 }
 
 .section-concentration .section-title {
-  grid-column: 1 / 4;
+  grid-column: 1 / 2;
   grid-row: 1 / 2;
 } 
+
+.section-concentration article {
+  grid-row-start: 2;
+}
 
 /* Секция Советы */
 .section-advices {
