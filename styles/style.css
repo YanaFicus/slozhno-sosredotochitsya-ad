@@ -196,6 +196,7 @@
   color: var(--accent-color);
   font-weight: 700;
   font-size: 1rem;
+  line-height: 130%;
 }
 
 .content__section {
@@ -208,6 +209,7 @@
   color: var(--text-secondary-dark);
   font-weight: 700;
   font-size: 1rem;
+  line-height: 130%;
   background-color: var(--accent-color);
 }
 
@@ -215,11 +217,13 @@
   color: var(--text-secondary-dark);
   font-weight: 400;
   font-size: 1rem;
+  line-height: 130%;
   background-color: var(--accent-color);
 }
 
 .content__section .content__text {
   color: var(--text-secondary);
+  line-height: 130%;
 }
 
 /* Секция Почему так сложно */
