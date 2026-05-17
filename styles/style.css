@@ -1,6 +1,7 @@
 /* --- Страница и Фон --- */
 .page {
   background-color: var(--background-color);
+  background-attachment: fixed;
 }
 
 /* --- Общие классы --- */
@@ -58,7 +59,10 @@
 /* Уголки */
 .viewfinder-corners {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 10;
   pointer-events: none;
 }
@@ -137,9 +141,8 @@
   .header__nav {
     top: 140px;
     right: 20px;
-
+    right: 0;
     left: auto;
-
     flex-direction: column;
     align-items: flex-end;
     transform: none;
@@ -150,11 +153,6 @@
     grid-row: 2;
     max-width: 100%;
     margin-bottom: 183px;
-  }
-
-  
-  .header__nav {
-    right: 0;
   }
 }
 
