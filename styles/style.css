@@ -78,6 +78,7 @@
 .header__title {
   grid-column: 1 / -1;
   grid-row: 2;
+  margin-left: -20px;
   justify-self: start;
   align-self: center;
   font-size: clamp(6.5rem, 15vw, 9.8rem);
@@ -174,14 +175,8 @@
     padding: 10px;
   }
 
-  .corner--top-right {
-    top: 10px;
-    right: 10px;
-  }
-
-  .corner--bottom-left {
-    bottom: 10px;
-    left: 10px;
+  .header__title {
+    margin-left: -10px;
   }
 
   .header__nav {
@@ -316,6 +311,7 @@
 
   .section-concentration article {
     grid-column: 1 / 4;
+    grid-row-start: auto;
   }
 }
 
@@ -333,9 +329,13 @@
   .section-concentration {
     grid-template-columns: 1fr;
   }
-
+  .section-concentration .section-title {
+    grid-column: 1;
+    grid-row: 1 / 2;
+  } 
   .section-concentration article {
     grid-column: 1;
+    grid-row-start: auto;
   }
 
   .section-advices {
@@ -400,7 +400,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .footer__title {
