@@ -81,7 +81,7 @@
   margin-left: -20px;
   justify-self: start;
   align-self: center;
-  font-size: clamp(6.5rem, 15vw, 9.8rem);
+  font-size: clamp(6.5rem, 15.5vw, 9.8rem);
   line-height: 83%;
 }
 
