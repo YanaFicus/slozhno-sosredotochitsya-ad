@@ -12,6 +12,44 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--corner-color);
+  border-left: 1px solid var(--corner-color);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--corner-color);
+  border-right: 1px solid var(--corner-color);
+}
+
+@media (width < 768px) {
+  .decorated-zone::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .decorated-zone::after {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
 /* --- Header (шапка) --- */
 .header {
   position: relative;
@@ -56,39 +94,6 @@
   background-color: var(--accent-color);
 }
 
-/* Уголки */
-.viewfinder-corners {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.corner {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-width: 0;
-  border-style: solid;
-  border-color: var(--corner-color);
-}
-
-.corner--top-right {
-  top: 20px;
-  right: 20px;
-  border-top-width: 2px;
-  border-right-width: 2px;
-}
-
-.corner--bottom-left {
-  bottom: 20px;
-  left: 20px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-}
 
 /* REC */
 .rec-indicator {
@@ -134,8 +139,8 @@
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
   border-bottom: 1px solid var(--nav-hover-border);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -220,8 +225,8 @@
 }
 
 .content__text-link:hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .content__text-link:focus {
@@ -392,10 +397,12 @@
 /* --- Footer (подвал) --- */
 .footer {
   display: flex;
-   justify-content: center;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-top: 80px;
 }
+
 .footer__title {
   font-size: clamp(6.5rem, 15vw, 9.8rem);
 }
