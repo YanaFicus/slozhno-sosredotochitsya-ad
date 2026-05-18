@@ -7,14 +7,12 @@
 :root.theme-light {
   --background-color: #FFF1F7;
   --accent-color: #FF8DCB;
-  --accent-text-color: #FFC2E6;
+  --text-header-content: #353430;
   --text-link: #353430;
-  --nav-color: #353430;
-  --nav-hover-border: #32312D66;
-  --corner-color: #353430;
-  --rec-color: #353430;
-  --text-secondary: #353430;
+  --accent-color-opacity: #32312D66;
+  --accent-header-color: #FFC2E6;
   --text-secondary-dark: #353430;
+  --text-secondary: #353430;
   --background-image: url('../images/cover-image-light.png');
 }
 
@@ -22,25 +20,12 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   --background-color: #FFF1F7;
   --accent-color: #FF8DCB;
-  --accent-text-color: #FFC2E6;
+  --text-header-content: #353430;
   --text-link: #353430;
-  --nav-color: #353430;
-  --nav-hover-border: #32312D66;
-  --corner-color: #353430;
-  --rec-color: #353430;
-  --text-secondary: #353430;
+  --accent-color-opacity: #32312D66;
+  --accent-header-color: #FFC2E6;
   --text-secondary-dark: #353430;
+  --text-secondary: #353430;
   --background-image: url('../images/cover-image-light.png');
 }
 
-.theme-light .rec-indicator {
-  display: none;
-}
-
-.theme-light .rec-dot {
-  display: none;
-}
-
-.theme-light .section-title {
-  color: var(--text-secondary-dark);
-}
