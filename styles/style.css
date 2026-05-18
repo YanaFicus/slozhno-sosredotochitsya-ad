@@ -364,6 +364,7 @@
 
 /* --- Footer (подвал) --- */
 .footer {
+  margin-top: 60px;
   padding: 10px;
   min-block-size: 668px;
   block-size: 100vh;
@@ -384,5 +385,8 @@
 @media (width < 768px) {
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+  .footer {
+    margin-top: 40px;
   }
 }
