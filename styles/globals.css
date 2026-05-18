@@ -5,18 +5,18 @@
 }
 
 body {
-  margin: 0 auto;
-  scroll-behavior: smooth;
   min-inline-size: 375px;
   max-inline-size: 1440px;
+  margin: 0 auto;
 }
 
-html {
-  font-family: var(--font-family);
-  font-size: 18px;
-}
-
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -26,23 +26,15 @@ ul {
   list-style: none;
 }
 
-button, a {
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Класс для скринридеров, если нужен скрытый текст */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
 }
