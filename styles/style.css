@@ -119,7 +119,7 @@
 .header__title {
   grid-column: 1 / 3;
   justify-self: start;
-  margin-inline-start: 0; /* Убираем отрицательный margin */
+  margin-inline-start: -20px; /* Убираем отрицательный margin */
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: var(--small-line-height);
 }
@@ -134,7 +134,7 @@
   }
 
   .header__title {
-    margin-inline-start: 0;
+    margin-inline-start: -20px;
   }
 
   .header__theme-menu {
@@ -153,6 +153,10 @@
     padding: 10px;
   }
 
+    .header__title {
+    margin-inline-start: -10px;
+  }
+
   .header__subtitle {
     display: inline-block;
     grid-column: 1 / 3;
@@ -160,7 +164,7 @@
   }
 
   .header__title {
-    margin-inline-start: 0; 
+    margin-inline-start: 0;
     font-size: clamp(6.5rem, 6.0115rem + 1.0178vw, 7rem);
   }
 }
@@ -189,6 +193,7 @@
 .content__text-link {
   color: var(--text-link);
   text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
 }
 
 .content__text-link:hover {
@@ -203,7 +208,7 @@
 .title-decor {
   color: var(--text-secondary-dark);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   line-height: 130%;
   background-color: var(--accent-color);
 }
@@ -211,7 +216,7 @@
 .subtitle-decor {
   color: var(--text-secondary-dark);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   line-height: 130%;
   background-color: var(--accent-color);
 }
